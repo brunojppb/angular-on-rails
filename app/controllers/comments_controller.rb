@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 
   def create
     post = Post.find(params[:post_id])
-    comment = post.comments.create(comments_params)
+    comment = post.comments.create(comments_params.merge(user_id: current_user.id))
     render json: comment, status: 201
   end
 

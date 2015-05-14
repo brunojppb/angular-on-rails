@@ -11,6 +11,7 @@
     <span ng-hide="post.link">
       {{post.title}}
     </span>
+    posted by <a ng-href="#/users/{{post.user.username}}">{{ post.user.username }}</a>
     <a href="#/posts/{{post.id}}">Comments</a>
   </span>
   <button class="btn btn-primary" ng-click="incrementUpvotes(post)" style="width: 90px;">

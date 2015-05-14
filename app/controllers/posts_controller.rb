@@ -12,8 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.new(post_params)
-    post.save
+    post = current_user.posts.create(post_params)
     render json: post, status: 201
   end
 
