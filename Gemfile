@@ -20,6 +20,8 @@ gem 'responders', '~> 2.0'
 
 # Angular routing templates
 gem 'angular-rails-templates'
+# Send rails CSRF token
+gem 'angular_rails_csrf'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

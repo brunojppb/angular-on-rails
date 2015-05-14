@@ -3,14 +3,14 @@ class CommentsController < ApplicationController
   def create
     post = Post.find(params[:post_id])
     comment = post.comments.create(comments_params)
-    respond_with post, comment
+    render json: comment, status: 201
   end
 
   def upvote
     post = Post.find(params[:post_id])
     comment = post.comments.find(params[:id])
     comment.increment!(:upvotes)
-    render json: post, status: 203
+    render json: comment, status: 202
   end
 
 

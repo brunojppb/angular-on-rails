@@ -11,9 +11,9 @@
     <span ng-hide="post.link">
       {{post.title}}
     </span>
-    <a href="#/posts/{{$index}}">Comments</a>
+    <a href="#/posts/{{post.id}}">Comments</a>
   </span>
-  <button class="btn btn-primary" ng-click="incrementUpvotes(post)" style="width: 90px">
+  <button class="btn btn-primary" ng-click="incrementUpvotes(post)" style="width: 90px;">
     <span class="glyphicon glyphicon-thumbs-up"></span>
     <span class="badge">{{post.upvotes}}</span>
   </button>
