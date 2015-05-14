@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlapperNews</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body ng-app="flapperNews">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <!-- ui-router detects a route change and place the new
+      state's template insede the ui-view tag and initialize
+      the especified controller -->
+      <ui-view></ui-view>
+    <!-- End col-md-6 -->
+    </div>
+    <!-- end row -->
+  </div>
+</body>
+</html>
+

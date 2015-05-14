@@ -1,0 +1,3 @@
+== Angular On Rails
+
+A little Rails App to demonstrate Angular, Bower and Rails working together.
